@@ -89,8 +89,3 @@ def getCourseAssignmentList(session, course:Course):
     assignments.append(htmlToAssignment(assignment))
   return assignments
 
-session = loginGS('xxx@umich.edu', 'xxx')
-courses = getCourseList(session)
-for course in courses:
-  course.setAssignments(getCourseAssignmentList(session, course))
-  print(course)
