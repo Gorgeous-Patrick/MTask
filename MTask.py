@@ -17,6 +17,9 @@ def filter_assignment(assi:Assignment):
     time = datetime.datetime.now()
     now = time.replace(tzinfo=dateutil.tz.tzlocal())
     
+    if (assi.submitted):
+      return False
+
     if (now>=assi.dueTime):
         return False
     
