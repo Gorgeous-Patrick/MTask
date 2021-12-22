@@ -3,7 +3,6 @@ import config as config
 import requests
 from Course import Course
 from Assignment import Assignment
-import time
 import dateutil.parser
 
 api_url=config.base_url+"api/v1/"

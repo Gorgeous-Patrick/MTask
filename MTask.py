@@ -13,6 +13,7 @@ def filter_assignment(assi:Assignment):
     if (assi.dueTime is None):
         return False
     # time = datetime.datetime.fromisoformat('2021-10-01')
+    # This is the test time.
     time = datetime.datetime.now()
     now = time.replace(tzinfo=dateutil.tz.tzlocal())
     
