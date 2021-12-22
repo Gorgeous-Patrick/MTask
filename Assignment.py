@@ -12,4 +12,4 @@ class Assignment:
     self.canvasURL = canvasURL
     self.canvasID = canvasID
   def __str__(self):
-    return f'{self.assignmentName}: \nDue at {self.dueTime}\nGradeScope at {self.gradescopeURL}\nCanvas at {self.canvasURL}\nSubmitted: {self.submitted}'
+    return f'{self.assignmentName}: \nDue at {self.dueTime.isoformat()}\nGradeScope at {self.gradescopeURL}\nCanvas at {self.canvasURL}\nSubmitted: {self.submitted}'
