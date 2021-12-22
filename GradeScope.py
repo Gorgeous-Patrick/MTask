@@ -62,6 +62,7 @@ def htmlToAssignment(parsedHtml):
   if (due!=None):
     dueStr = due.contents[0]
     dueDate=dateutil.parser.parse(dueStr)
+    dueDate = dueDate.replace(tzinfo = dateutil.tz.tzlocal())
   else:
     dueDate = None
   assignment = Assignment(name, dueDate,submitted, url)
